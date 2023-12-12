@@ -161,7 +161,7 @@
             {
               "name": "номерДогов",
               "caption": "Номер договора",
-              "hidden": false,
+              "hidden": true,
               "index": 6
             }
           ],

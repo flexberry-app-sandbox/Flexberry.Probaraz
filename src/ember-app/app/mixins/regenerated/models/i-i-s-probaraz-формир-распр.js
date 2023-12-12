@@ -63,7 +63,7 @@ export let defineProjections = function (modelClass) {
     дата: attr('Дата', { index: 0 }),
     номерДокРаспр: attr('Номер документа распределения', { index: 1 }),
     докумПостав: belongsTo('i-i-s-probaraz-докум-постав', 'Докум постав', {
-      номерДогов: attr('Номер договора', { index: 6 }),
+      номерДогов: attr('Номер договора', { index: 6, hidden: true }),
       клиенты: belongsTo('i-i-s-probaraz-клиенты', '', {
         наимЗаказ: attr('Заказчик', { index: 7 }),
         телефон: attr('Телефон', { index: 8 }),

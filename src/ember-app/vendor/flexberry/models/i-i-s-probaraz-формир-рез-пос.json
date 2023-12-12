@@ -88,7 +88,50 @@
           "lookupValue": "НомерДокРаспр",
           "lookupValueField": "номерДокРаспр",
           "relationName": "ФормирРаспр",
-          "belongsTo": [],
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ФормирРаспр.ДокумПостав",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "ФормирРаспр.ДокумПостав.Клиенты",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "наимЗаказ",
+                      "caption": "Заказчик",
+                      "hidden": false,
+                      "index": 5
+                    },
+                    {
+                      "name": "телефон",
+                      "caption": "Телефон",
+                      "hidden": false,
+                      "index": 6
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "клиенты",
+                  "relatedTo": "i-i-s-probaraz-клиенты",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "докумПостав",
+              "relatedTo": "i-i-s-probaraz-докум-постав",
+              "inverse": null
+            }
+          ],
           "hidden": false,
           "attrs": [],
           "index": 4,

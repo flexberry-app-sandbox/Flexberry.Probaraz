@@ -54,7 +54,12 @@ export let defineProjections = function (modelClass) {
     наличДеф: attr('Наличие дефектов', { index: 2 }),
     удовлКлиента: attr('Удовлетверенность клиента', { index: 3 }),
     формирРаспр: belongsTo('i-i-s-probaraz-формир-распр', 'Документ распределения', {
-
+      докумПостав: belongsTo('i-i-s-probaraz-докум-постав', '', {
+        клиенты: belongsTo('i-i-s-probaraz-клиенты', '', {
+          наимЗаказ: attr('Заказчик', { index: 5 }),
+          телефон: attr('Телефон', { index: 6 })
+        }, { index: -1, hidden: true })
+      }, { index: -1, hidden: true })
     }, { index: 4, displayMemberPath: 'номерДокРаспр' })
   });
 

@@ -58,7 +58,7 @@ export let defineProjections = function (modelClass) {
       наимОрганиз: attr('Наименование организации', { index: 3, hidden: true })
     }, { index: 2, displayMemberPath: 'наимОрганиз' }),
     клиенты: belongsTo('i-i-s-probaraz-клиенты', 'Клиент', {
-      наимЗаказ: attr('Заказчик', { index: 5 })
+      наимЗаказ: attr('Заказчик', { index: 5, hidden: true })
     }, { index: 4, displayMemberPath: 'наимЗаказ' }),
     инфорОЗаказе: hasMany('i-i-s-probaraz-инфор-о-заказе', 'Информация о заказе', {
       количество: attr('Количество', { index: 0 }),

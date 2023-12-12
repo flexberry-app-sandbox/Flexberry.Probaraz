@@ -98,7 +98,7 @@
             {
               "name": "наимЗаказ",
               "caption": "Заказчик",
-              "hidden": false,
+              "hidden": true,
               "index": 5
             }
           ],

@@ -39,7 +39,8 @@ namespace IIS.Probaraz
             "ДокумПостав.НомерДогов as \'Номер договора\'",
             "ДокумПостав.Клиенты.НаимЗаказ as \'Заказчик\'",
             "ДокумПостав.Клиенты.Телефон as \'Телефон\'",
-            "ДокумПостав.Клиенты.АдресПоставки as \'Адрес поставки\'"})]
+            "ДокумПостав.Клиенты.АдресПоставки as \'Адрес поставки\'"}, Hidden=new string[] {
+            "ДокумПостав.НомерДогов"})]
     [MasterViewDefineAttribute("ФормирРаспрE", "СписокБарж", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НомерБаржи")]
     [MasterViewDefineAttribute("ФормирРаспрE", "ПунктПогрузки", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Адрес")]
     [MasterViewDefineAttribute("ФормирРаспрE", "СписокКонтей", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НомерКонтей")]

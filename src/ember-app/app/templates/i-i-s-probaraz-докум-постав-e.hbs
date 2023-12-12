@@ -82,16 +82,6 @@
     {{flexberry-validationmessage error=(v-get validationModel "клиенты" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.клиенты.наимЗаказ
-      class=(if (v-get validationModel.клиенты "наимЗаказ" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-докум-постав-e.клиенты.наимЗаказ-caption")
-      data-test-i-i-s-probaraz-докум-постав-e-клиенты-наимЗаказ=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.клиенты "наимЗаказ" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-probaraz-докум-постав-e.инфорОЗаказе-caption"}}</label>
     {{flexberry-groupedit
       componentName="инфорОЗаказеGroupEdit"
