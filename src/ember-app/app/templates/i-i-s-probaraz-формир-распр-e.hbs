@@ -150,11 +150,11 @@
   <div class="field">
     {{flexberry-field
       readonly=true
-      value=model.докумПостав.клиенты.адресПоставщик
-      class=(if (v-get validationModel.докумПостав.клиенты "адресПоставщик" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.клиенты.адресПоставщик-caption")
-      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-клиенты-адресПоставщик=true
+      value=model.докумПостав.клиенты.адресПоставки
+      class=(if (v-get validationModel.докумПостав.клиенты "адресПоставки" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.клиенты.адресПоставки-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-клиенты-адресПоставки=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "адресПоставщик" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "адресПоставки" "message")}}
   </div>
 </form>

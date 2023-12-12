@@ -51,8 +51,8 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРезПосE', 'i-i-s-probaraz-формир-рез-пос', {
     дата: attr('Дата', { index: 0 }),
     статусЗаказа: attr('Статус заказа', { index: 1 }),
-    наличДеф: attr('Налич деф', { index: 2 }),
-    удовлКлиента: attr('Удовл клиента', { index: 3 })
+    наличДеф: attr('Наличие дефектов', { index: 2 }),
+    удовлКлиента: attr('Удовлетверенность клиента', { index: 3 })
   });
 
   modelClass.defineProjection('ФормирРезПосL', 'i-i-s-probaraz-формир-рез-пос', {

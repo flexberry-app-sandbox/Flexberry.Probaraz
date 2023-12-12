@@ -5,15 +5,15 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
-  адресПоставщик: DS.attr('string'),
+  адресПоставки: DS.attr('string'),
   наимЗаказ: DS.attr('string'),
   расчетСчет: DS.attr('number'),
   телефон: DS.attr('number')
 });
 
 export let ValidationRules = {
-  адресПоставщик: {
-    descriptionKey: 'models.i-i-s-probaraz-клиенты.validations.адресПоставщик.__caption__',
+  адресПоставки: {
+    descriptionKey: 'models.i-i-s-probaraz-клиенты.validations.адресПоставки.__caption__',
     validators: [
       validator('ds-error'),
     ],
@@ -44,14 +44,14 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('КлиентыE', 'i-i-s-probaraz-клиенты', {
     наимЗаказ: attr('Заказчик', { index: 0 }),
     телефон: attr('Телефон', { index: 1 }),
-    адресПоставщик: attr('Адрес поставщика', { index: 2 }),
+    адресПоставки: attr('Адрес поставки', { index: 2 }),
     расчетСчет: attr('Расчетный счет', { index: 3 })
   });
 
   modelClass.defineProjection('КлиентыL', 'i-i-s-probaraz-клиенты', {
     наимЗаказ: attr('Заказчик', { index: 0 }),
     телефон: attr('Телефон', { index: 1 }),
-    адресПоставщик: attr('Адрес поставщика', { index: 2 }),
+    адресПоставки: attr('Адрес поставки', { index: 2 }),
     расчетСчет: attr('Расчетный счет', { index: 3 })
   });
 };

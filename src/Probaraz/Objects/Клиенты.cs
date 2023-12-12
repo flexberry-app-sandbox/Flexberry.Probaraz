@@ -31,12 +31,12 @@ namespace IIS.Probaraz
     [View("КлиентыE", new string[] {
             "НаимЗаказ as \'Заказчик\'",
             "Телефон as \'Телефон\'",
-            "АдресПоставщик as \'Адрес поставщика\'",
+            "АдресПоставки as \'Адрес поставки\'",
             "РасчетСчет as \'Расчетный счет\'"})]
     [View("КлиентыL", new string[] {
             "НаимЗаказ as \'Заказчик\'",
             "Телефон as \'Телефон\'",
-            "АдресПоставщик as \'Адрес поставщика\'",
+            "АдресПоставки as \'Адрес поставки\'",
             "РасчетСчет as \'Расчетный счет\'"})]
     public class Клиенты : ICSSoft.STORMNET.DataObject
     {
@@ -45,7 +45,7 @@ namespace IIS.Probaraz
         
         private int fТелефон;
         
-        private string fАдресПоставщик;
+        private string fАдресПоставки;
         
         private int fРасчетСчет;
         
@@ -55,34 +55,34 @@ namespace IIS.Probaraz
 
         
         /// <summary>
-        /// АдресПоставщик.
+        /// АдресПоставки.
         /// </summary>
-        // *** Start programmer edit section *** (Клиенты.АдресПоставщик CustomAttributes)
+        // *** Start programmer edit section *** (Клиенты.АдресПоставки CustomAttributes)
 
-        // *** End programmer edit section *** (Клиенты.АдресПоставщик CustomAttributes)
+        // *** End programmer edit section *** (Клиенты.АдресПоставки CustomAttributes)
         [StrLen(255)]
-        public virtual string АдресПоставщик
+        public virtual string АдресПоставки
         {
             get
             {
-                // *** Start programmer edit section *** (Клиенты.АдресПоставщик Get start)
+                // *** Start programmer edit section *** (Клиенты.АдресПоставки Get start)
 
-                // *** End programmer edit section *** (Клиенты.АдресПоставщик Get start)
-                string result = this.fАдресПоставщик;
-                // *** Start programmer edit section *** (Клиенты.АдресПоставщик Get end)
+                // *** End programmer edit section *** (Клиенты.АдресПоставки Get start)
+                string result = this.fАдресПоставки;
+                // *** Start programmer edit section *** (Клиенты.АдресПоставки Get end)
 
-                // *** End programmer edit section *** (Клиенты.АдресПоставщик Get end)
+                // *** End programmer edit section *** (Клиенты.АдресПоставки Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Клиенты.АдресПоставщик Set start)
+                // *** Start programmer edit section *** (Клиенты.АдресПоставки Set start)
 
-                // *** End programmer edit section *** (Клиенты.АдресПоставщик Set start)
-                this.fАдресПоставщик = value;
-                // *** Start programmer edit section *** (Клиенты.АдресПоставщик Set end)
+                // *** End programmer edit section *** (Клиенты.АдресПоставки Set start)
+                this.fАдресПоставки = value;
+                // *** Start programmer edit section *** (Клиенты.АдресПоставки Set end)
 
-                // *** End programmer edit section *** (Клиенты.АдресПоставщик Set end)
+                // *** End programmer edit section *** (Клиенты.АдресПоставки Set end)
             }
         }
         

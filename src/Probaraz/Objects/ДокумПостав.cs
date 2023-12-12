@@ -34,12 +34,13 @@ namespace IIS.Probaraz
             "НомерДогов as \'Номер договора\'",
             "Организация as \'Организация\'",
             "Организация.НаимОрганиз as \'Наименование организации\'",
-            "Клиенты as \'Клиенты\'"}, Hidden=new string[] {
+            "Клиенты as \'Клиент\'",
+            "Клиенты.НаимЗаказ as \'Заказчик\'"}, Hidden=new string[] {
             "Организация.НаимОрганиз"})]
     [AssociatedDetailViewAttribute("ДокумПоставE", "ИнфорОЗаказе", "ИнфорОЗаказеE", true, "", "Информация о заказе", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ДокумПоставE", "Организация", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НаимОрганиз")]
-    [MasterViewDefineAttribute("ДокумПоставE", "Клиенты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НаимЗаказа")]
+    [MasterViewDefineAttribute("ДокумПоставE", "Клиенты", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НаимЗаказ")]
     [View("ДокумПоставL", new string[] {
             "Дата as \'Дата\'",
             "НомерДогов as \'Номер договора\'",

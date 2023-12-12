@@ -47,12 +47,12 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.адресПоставщик
-      class=(if (v-get validationModel "адресПоставщик" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-клиенты-e.адресПоставщик-caption")
-      data-test-i-i-s-probaraz-клиенты-e-адресПоставщик=true
+      value=model.адресПоставки
+      class=(if (v-get validationModel "адресПоставки" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-клиенты-e.адресПоставки-caption")
+      data-test-i-i-s-probaraz-клиенты-e-адресПоставки=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "адресПоставщик" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "адресПоставки" "message")}}
   </div>
   <div class="field">
     {{flexberry-field

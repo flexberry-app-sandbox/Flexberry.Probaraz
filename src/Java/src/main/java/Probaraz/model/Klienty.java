@@ -27,8 +27,8 @@ public class Klienty {
     @Column(name = "Телефон")
     private Integer телефон;
 
-    @Column(name = "АдресПоставщик")
-    private String адреспоставщик;
+    @Column(name = "АдресПоставки")
+    private String адреспоставки;
 
     @Column(name = "РасчетСчет")
     private Integer расчетсчет;
@@ -62,12 +62,12 @@ public class Klienty {
       this.телефон = телефон;
     }
 
-    public String getАдресПоставщик() {
-      return адреспоставщик;
+    public String getАдресПоставки() {
+      return адреспоставки;
     }
 
-    public void setАдресПоставщик(String адреспоставщик) {
-      this.адреспоставщик = адреспоставщик;
+    public void setАдресПоставки(String адреспоставки) {
+      this.адреспоставки = адреспоставки;
     }
 
     public Integer getРасчетСчет() {
