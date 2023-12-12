@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Список контей",
+  "name": "IISProbarazСписокКонтейE",
+  "className": "СписокКонтейE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probaraz-список-контей",
+      "modelProjection": "СписокКонтейE"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Probaraz.model.DokumPostav</class>
+        <class>Probaraz.model.Tovary</class>
+        <class>Probaraz.model.SpisokBarzh</class>
+        <class>Probaraz.model.PunktPogruzki</class>
+        <class>Probaraz.model.Klienty</class>
+        <class>Probaraz.model.SpisokKontej</class>
+        <class>Probaraz.model.FormirRezPos</class>
+        <class>Probaraz.model.Organizaciya</class>
+        <class>Probaraz.model.FormirRaspr</class>
+        <class>Probaraz.model.InforOZakaze</class>
+        <class>Probaraz.model.FlexberryAdvLimit</class>
+        <class>Probaraz.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Probaraz.model.NewPlatformFlexberryServicesLock</class>
+        <class>Probaraz.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

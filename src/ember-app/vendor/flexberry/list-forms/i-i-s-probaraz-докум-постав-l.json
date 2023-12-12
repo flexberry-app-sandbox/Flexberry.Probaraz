@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probaraz-докум-постав-e",
+  "editForm": "i-i-s-probaraz-докум-постав-e",
+  "external": false,
+  "caption": "Докум постав",
+  "name": "IISProbarazДокумПоставL",
+  "className": "ДокумПоставL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probaraz-докум-постав",
+      "modelProjection": "ДокумПоставL"
+    }
+  ]
+}

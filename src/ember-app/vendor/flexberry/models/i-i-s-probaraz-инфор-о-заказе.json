@@ -1,0 +1,101 @@
+﻿{
+  "name": "IISProbarazИнфорОЗаказе",
+  "modelName": "i-i-s-probaraz-инфор-о-заказе",
+  "className": "ИнфорОЗаказе",
+  "nameSpace": "IIS.Probaraz",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товары",
+      "relatedTo": "i-i-s-probaraz-товары",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПостав",
+      "relatedTo": "i-i-s-probaraz-докум-постав",
+      "inverse": "инфорОЗаказе"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ИнфорОЗаказеE",
+      "modelName": "i-i-s-probaraz-инфор-о-заказе",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимТовара",
+          "lookupValueField": "наимТовара",
+          "relationName": "Товары",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимТовара",
+              "caption": "Наименование товара",
+              "hidden": true,
+              "index": 2
+            },
+            {
+              "name": "производит",
+              "caption": "Производитель",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "единицыИзмер",
+              "caption": "Единицы измерения",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "масса",
+              "caption": "Масса",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товары",
+          "relatedTo": "i-i-s-probaraz-товары",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

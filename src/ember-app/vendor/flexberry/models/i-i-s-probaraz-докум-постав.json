@@ -1,0 +1,202 @@
+﻿{
+  "name": "IISProbarazДокумПостав",
+  "modelName": "i-i-s-probaraz-докум-постав",
+  "className": "ДокумПостав",
+  "nameSpace": "IIS.Probaraz",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерДогов",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-probaraz-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-probaraz-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "инфорОЗаказе",
+      "relatedTo": "i-i-s-probaraz-инфор-о-заказе",
+      "inverse": "докумПостав"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ДокумПоставE",
+      "modelName": "i-i-s-probaraz-докум-постав",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДогов",
+          "caption": "Номер договора",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимОрганиз",
+          "lookupValueField": "наимОрганиз",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимОрганиз",
+              "caption": "Наименование организации",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-probaraz-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НаимЗаказа",
+          "lookupValueField": "наимЗаказа",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимЗаказ",
+              "caption": "Заказчик",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-probaraz-клиенты",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ИнфорОЗаказеE",
+          "caption": "Информация о заказе",
+          "name": "инфорОЗаказе",
+          "relatedTo": "i-i-s-probaraz-инфор-о-заказе",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ДокумПоставL",
+      "modelName": "i-i-s-probaraz-докум-постав",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДогов",
+          "caption": "Номер договора",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимОрганиз",
+              "caption": "Наименование организации",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование организации",
+          "name": "организация",
+          "relatedTo": "i-i-s-probaraz-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимЗаказ",
+              "caption": "Заказчик",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "телефон",
+              "caption": "Телефон",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "адресПоставщик",
+              "caption": "Адрес поставщика",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Заказчик",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-probaraz-клиенты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

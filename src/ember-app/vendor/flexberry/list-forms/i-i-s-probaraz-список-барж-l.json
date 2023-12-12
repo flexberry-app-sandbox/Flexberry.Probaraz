@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probaraz-список-барж-e",
+  "editForm": "i-i-s-probaraz-список-барж-e",
+  "external": false,
+  "caption": "Список барж",
+  "name": "IISProbarazСписокБаржL",
+  "className": "СписокБаржL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probaraz-список-барж",
+      "modelProjection": "СписокБаржL"
+    }
+  ]
+}

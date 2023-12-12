@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": "товары",
+      "displayAttributeName": "наимТовара",
+      "required": true,
+      "relationName": "ИнфорОЗаказе.Товары",
+      "projection": "ТоварыL",
+      "detailModelName": "i-i-s-probaraz-инфор-о-заказе"
+    }
+  ],
+  "external": false,
+  "caption": "Докум постав",
+  "name": "IISProbarazДокумПоставE",
+  "className": "ДокумПоставE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probaraz-докум-постав",
+      "modelProjection": "ДокумПоставE"
+    }
+  ]
+}

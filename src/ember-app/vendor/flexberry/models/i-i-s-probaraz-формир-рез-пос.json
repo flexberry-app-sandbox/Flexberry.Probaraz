@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISProbarazФормирРезПос",
+  "modelName": "i-i-s-probaraz-формир-рез-пос",
+  "className": "ФормирРезПос",
+  "nameSpace": "IIS.Probaraz",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличДеф",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статусЗаказа",
+      "type": "i-i-s-probaraz-состоян-заказа",
+      "flexberryType": "СостоянЗаказа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "удовлКлиента",
+      "type": "i-i-s-probaraz-удовл-кл",
+      "flexberryType": "УдовлКл",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формирРаспр",
+      "relatedTo": "i-i-s-probaraz-формир-распр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирРезПосE",
+      "modelName": "i-i-s-probaraz-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличДеф",
+          "caption": "Налич деф",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКлиента",
+          "caption": "Удовл клиента",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирРезПосL",
+      "modelName": "i-i-s-probaraz-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличДеф",
+          "caption": "Налич деф",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКлиента",
+          "caption": "Удовл клиента",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProbarazОрганизация",
+  "modelName": "i-i-s-probaraz-организация",
+  "className": "Организация",
+  "nameSpace": "IIS.Probaraz",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наимОрганиз",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОрганизацияE",
+      "modelName": "i-i-s-probaraz-организация",
+      "attrs": [
+        {
+          "name": "наимОрганиз",
+          "caption": "Наим организ",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОрганизацияL",
+      "modelName": "i-i-s-probaraz-организация",
+      "attrs": [
+        {
+          "name": "наимОрганиз",
+          "caption": "Наим организ",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

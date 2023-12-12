@@ -1,0 +1,190 @@
+<h3 class="ui header">{{t "forms.i-i-s-probaraz-формир-распр-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-распр-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-распр-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерДокРаспр
+      class=(if (v-get validationModel "номерДокРаспр" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.номерДокРаспр-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-номерДокРаспр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерДокРаспр" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-распр-e.списокБарж-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.списокБарж
+      displayAttributeName="номерБаржи"
+      autocomplete=true
+      relationName="списокБарж"
+      projection="СписокБаржL"
+      title=(t "forms.i-i-s-probaraz-формир-распр-e.списокБарж-caption")
+      readonly=readonly
+      componentName="списокБаржLookup"
+      class=(if (v-get validationModel "списокБарж" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-распр-e-списокБарж=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "списокБарж" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.списокБарж.номерБаржи
+      class=(if (v-get validationModel.списокБарж "номерБаржи" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.списокБарж.номерБаржи-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-списокБарж-номерБаржи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.списокБарж "номерБаржи" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-распр-e.пунктПогрузки-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.пунктПогрузки
+      displayAttributeName="адрес"
+      autocomplete=true
+      relationName="пунктПогрузки"
+      projection="ПунктПогрузкиL"
+      title=(t "forms.i-i-s-probaraz-формир-распр-e.пунктПогрузки-caption")
+      readonly=readonly
+      componentName="пунктПогрузкиLookup"
+      class=(if (v-get validationModel "пунктПогрузки" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-распр-e-пунктПогрузки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пунктПогрузки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.пунктПогрузки.адрес
+      class=(if (v-get validationModel.пунктПогрузки "адрес" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.пунктПогрузки.адрес-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-пунктПогрузки-адрес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.пунктПогрузки "адрес" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-распр-e.списокКонтей-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.списокКонтей
+      displayAttributeName="номерКонтей"
+      autocomplete=true
+      relationName="списокКонтей"
+      projection="СписокКонтейL"
+      title=(t "forms.i-i-s-probaraz-формир-распр-e.списокКонтей-caption")
+      readonly=readonly
+      componentName="списокКонтейLookup"
+      class=(if (v-get validationModel "списокКонтей" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-распр-e-списокКонтей=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "списокКонтей" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.списокКонтей.номерКонтей
+      class=(if (v-get validationModel.списокКонтей "номерКонтей" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.списокКонтей.номерКонтей-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-списокКонтей-номерКонтей=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.списокКонтей "номерКонтей" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-распр-e.докумПостав-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.докумПостав
+      displayAttributeName="номерДогов"
+      autocomplete=true
+      relationName="докумПостав"
+      projection="ДокумПоставL"
+      title=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав-caption")
+      readonly=readonly
+      componentName="докумПоставLookup"
+      class=(if (v-get validationModel "докумПостав" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "докумПостав" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.номерДогов
+      class=(if (v-get validationModel.докумПостав "номерДогов" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.номерДогов-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-номерДогов=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав "номерДогов" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.клиенты.наимЗаказ
+      class=(if (v-get validationModel.докумПостав.клиенты "наимЗаказ" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.клиенты.наимЗаказ-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-клиенты-наимЗаказ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "наимЗаказ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.клиенты.телефон
+      class=(if (v-get validationModel.докумПостав.клиенты "телефон" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.клиенты.телефон-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-клиенты-телефон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "телефон" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.клиенты.адресПоставщик
+      class=(if (v-get validationModel.докумПостав.клиенты "адресПоставщик" "isInvalid") "error")
+      label=(t "forms.i-i-s-probaraz-формир-распр-e.докумПостав.клиенты.адресПоставщик-caption")
+      data-test-i-i-s-probaraz-формир-распр-e-докумПостав-клиенты-адресПоставщик=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "адресПоставщик" "message")}}
+  </div>
+</form>

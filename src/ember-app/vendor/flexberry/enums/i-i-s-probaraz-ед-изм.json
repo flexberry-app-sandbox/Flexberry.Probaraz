@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Probaraz",
+  "className": "ЕдИзм",
+  "enumObjects": {
+    "Шт": "Шт",
+    "Тонн": "Тонн",
+    "Кг": "Кг",
+    "Л": "Л"
+  }
+}

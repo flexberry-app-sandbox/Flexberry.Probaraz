@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISProbarazТовары",
+  "modelName": "i-i-s-probaraz-товары",
+  "className": "Товары",
+  "nameSpace": "IIS.Probaraz",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "единицыИзмер",
+      "type": "i-i-s-probaraz-ед-изм",
+      "flexberryType": "ЕдИзм",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "масса",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимТовара",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "производит",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварыE",
+      "modelName": "i-i-s-probaraz-товары",
+      "attrs": [
+        {
+          "name": "наимТовара",
+          "caption": "Наим товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "производит",
+          "caption": "Производит",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "единицыИзмер",
+          "caption": "Единицы измер",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "масса",
+          "caption": "Масса",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварыL",
+      "modelName": "i-i-s-probaraz-товары",
+      "attrs": [
+        {
+          "name": "наимТовара",
+          "caption": "Наим товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "производит",
+          "caption": "Производит",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "единицыИзмер",
+          "caption": "Единицы измер",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "масса",
+          "caption": "Масса",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

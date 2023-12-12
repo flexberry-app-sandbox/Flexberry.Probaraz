@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probaraz-клиенты-e",
+  "editForm": "i-i-s-probaraz-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISProbarazКлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probaraz-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

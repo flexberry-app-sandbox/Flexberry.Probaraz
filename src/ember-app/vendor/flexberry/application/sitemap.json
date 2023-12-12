@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Probaraz",
+  "applicationTitle": "Probaraz",
+  "items": [
+    {
+      "link": null,
+      "menuName": "probaraz",
+      "caption": "Probaraz",
+      "title": "Probaraz",
+      "children": [
+        {
+          "link": "i-i-s-probaraz-докум-постав-l",
+          "menuName": null,
+          "caption": "Докум постав",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-товары-l",
+          "menuName": null,
+          "caption": "Товары",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-список-барж-l",
+          "menuName": null,
+          "caption": "Список барж",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-пункт-погрузки-l",
+          "menuName": null,
+          "caption": "Пункт погрузки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-список-контей-l",
+          "menuName": null,
+          "caption": "Список контей",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-формир-рез-пос-l",
+          "menuName": null,
+          "caption": "Формир рез пос",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probaraz-формир-распр-l",
+          "menuName": null,
+          "caption": "Формир распр",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
