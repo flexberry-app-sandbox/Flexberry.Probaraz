@@ -164,18 +164,6 @@
               "caption": "Заказчик",
               "hidden": false,
               "index": 3
-            },
-            {
-              "name": "телефон",
-              "caption": "Телефон",
-              "hidden": false,
-              "index": 4
-            },
-            {
-              "name": "адресПоставщик",
-              "caption": "Адрес поставщика",
-              "hidden": false,
-              "index": 5
             }
           ],
           "index": -1,
