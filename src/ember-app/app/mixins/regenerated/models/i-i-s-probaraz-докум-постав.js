@@ -61,14 +61,14 @@ export let defineProjections = function (modelClass) {
       наимЗаказ: attr('Заказчик', { index: 5, hidden: true })
     }, { index: 4, displayMemberPath: 'наимЗаказ' }),
     инфорОЗаказе: hasMany('i-i-s-probaraz-инфор-о-заказе', 'Информация о заказе', {
-      количество: attr('Количество', { index: 0 }),
       товары: belongsTo('i-i-s-probaraz-товары', 'Товар', {
-        наимТовара: attr('Наименование товара', { index: 2, hidden: true }),
+        наимТовара: attr('Наименование товара', { index: 1, hidden: true }),
         производит: attr('Производитель', { index: 3 }),
         единицыИзмер: attr('Единицы измерения', { index: 4 }),
         цена: attr('Цена', { index: 5 }),
         масса: attr('Масса', { index: 6 })
-      }, { index: 1, displayMemberPath: 'наимТовара' })
+      }, { index: 0, displayMemberPath: 'наимТовара' }),
+      количество: attr('Количество', { index: 2 })
     })
   });
 

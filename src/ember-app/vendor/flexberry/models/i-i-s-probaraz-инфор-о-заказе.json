@@ -42,7 +42,7 @@
           "name": "количество",
           "caption": "Количество",
           "hidden": false,
-          "index": 0
+          "index": 2
         }
       ],
       "belongsTo": [
@@ -57,7 +57,7 @@
               "name": "наимТовара",
               "caption": "Наименование товара",
               "hidden": true,
-              "index": 2
+              "index": 1
             },
             {
               "name": "производит",
@@ -84,7 +84,7 @@
               "index": 6
             }
           ],
-          "index": 1,
+          "index": 0,
           "type": "standard",
           "caption": "Товар",
           "name": "товары",

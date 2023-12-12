@@ -22,19 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-probaraz-докум-постав-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-докум-постав-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-докум-постав-l.title'),
-            icon: 'edit',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-probaraz-товары-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-товары-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-товары-l.title'),
-            icon: 'address card',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-probaraz-список-барж-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-список-барж-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-список-барж-l.title'),
-            icon: 'book',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-probaraz-пункт-погрузки-l',
@@ -45,25 +45,25 @@ export default Controller.extend({
             link: 'i-i-s-probaraz-клиенты-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-клиенты-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-клиенты-l.title'),
-            icon: 'archive',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-probaraz-список-контей-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-список-контей-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-список-контей-l.title'),
-            icon: 'folder',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-probaraz-формир-рез-пос-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-формир-рез-пос-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-формир-рез-пос-l.title'),
-            icon: 'briefcase',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-probaraz-организация-l',
             caption: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.probaraz.i-i-s-probaraz-организация-l.title'),
-            icon: 'building',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-probaraz-формир-распр-l',
