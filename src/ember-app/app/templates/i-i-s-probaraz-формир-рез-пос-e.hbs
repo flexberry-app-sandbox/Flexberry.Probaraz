@@ -65,4 +65,22 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "удовлКлиента" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probaraz-формир-рез-пос-e.формирРаспр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.формирРаспр
+      displayAttributeName="номерДокРаспр"
+      autocomplete=true
+      relationName="формирРаспр"
+      projection="ФормирРаспрL"
+      title=(t "forms.i-i-s-probaraz-формир-рез-пос-e.формирРаспр-caption")
+      readonly=readonly
+      componentName="формирРаспрLookup"
+      class=(if (v-get validationModel "формирРаспр" "isInvalid") "error")
+      data-test-i-i-s-probaraz-формир-рез-пос-e-формирРаспр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "формирРаспр" "message")}}
+  </div>
 </form>
