@@ -81,14 +81,7 @@
           "relationName": "СписокБарж",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "номерБаржи",
-              "caption": "Номер баржи",
-              "hidden": false,
-              "index": 3
-            }
-          ],
+          "attrs": [],
           "index": 2,
           "type": "standard",
           "caption": "Список барж",
@@ -102,15 +95,8 @@
           "relationName": "ПунктПогрузки",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "адрес",
-              "caption": "Адрес",
-              "hidden": false,
-              "index": 5
-            }
-          ],
-          "index": 4,
+          "attrs": [],
+          "index": 3,
           "type": "standard",
           "caption": "Пункт погрузки",
           "name": "пунктПогрузки",
@@ -123,15 +109,8 @@
           "relationName": "СписокКонтей",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "номерКонтей",
-              "caption": "Номер контейнера",
-              "hidden": false,
-              "index": 7
-            }
-          ],
-          "index": 6,
+          "attrs": [],
+          "index": 4,
           "type": "standard",
           "caption": "Список контей",
           "name": "списокКонтей",
@@ -154,19 +133,19 @@
                   "name": "наимЗаказ",
                   "caption": "Заказчик",
                   "hidden": false,
-                  "index": 10
+                  "index": 7
                 },
                 {
                   "name": "телефон",
                   "caption": "Телефон",
                   "hidden": false,
-                  "index": 11
+                  "index": 8
                 },
                 {
                   "name": "адресПоставщик",
                   "caption": "Адрес поставщика",
                   "hidden": false,
-                  "index": 12
+                  "index": 9
                 }
               ],
               "index": -1,
@@ -183,10 +162,10 @@
               "name": "номерДогов",
               "caption": "Номер договора",
               "hidden": false,
-              "index": 9
+              "index": 6
             }
           ],
-          "index": 8,
+          "index": 5,
           "type": "standard",
           "caption": "Докум постав",
           "name": "докумПостав",

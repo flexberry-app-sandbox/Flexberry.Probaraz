@@ -64,16 +64,6 @@
     {{flexberry-validationmessage error=(v-get validationModel "списокБарж" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.списокБарж.номерБаржи
-      class=(if (v-get validationModel.списокБарж "номерБаржи" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-формир-распр-e.списокБарж.номерБаржи-caption")
-      data-test-i-i-s-probaraz-формир-распр-e-списокБарж-номерБаржи=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.списокБарж "номерБаржи" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-probaraz-формир-распр-e.пунктПогрузки-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"
@@ -92,16 +82,6 @@
     {{flexberry-validationmessage error=(v-get validationModel "пунктПогрузки" "message")}}
   </div>
   <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.пунктПогрузки.адрес
-      class=(if (v-get validationModel.пунктПогрузки "адрес" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-формир-распр-e.пунктПогрузки.адрес-caption")
-      data-test-i-i-s-probaraz-формир-распр-e-пунктПогрузки-адрес=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.пунктПогрузки "адрес" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-probaraz-формир-распр-e.списокКонтей-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"
@@ -118,16 +98,6 @@
       data-test-i-i-s-probaraz-формир-распр-e-списокКонтей=true
     }}
     {{flexberry-validationmessage error=(v-get validationModel "списокКонтей" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.списокКонтей.номерКонтей
-      class=(if (v-get validationModel.списокКонтей "номерКонтей" "isInvalid") "error")
-      label=(t "forms.i-i-s-probaraz-формир-распр-e.списокКонтей.номерКонтей-caption")
-      data-test-i-i-s-probaraz-формир-распр-e-списокКонтей-номерКонтей=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.списокКонтей "номерКонтей" "message")}}
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-probaraz-формир-распр-e.докумПостав-caption"}}</label>
